@@ -1,0 +1,18 @@
+{
+  "git.postCommitCommand": "push",                        // Changes Commit button in source control tab to Commit & Push
+  "github.copilot.inlineSuggest.enable": false,           // Disables the automatic inline code completion and suggestions.
+  "github.copilot.editor.enableAutoCompletions": false,
+  "chat.disableAIFeatures": true                          // Hides AI-related UI elements like the chat panel and status bar icons. 
+  "redhat.telemetry.enabled": false,                      // Disables usage data collection by Red Hat extensions
+  "git.autofetch": true,                                  // Periodically fetches from the remote repository.
+  // Hides files/folders from the VS Code Explorer:
+  "files.exclude": {
+    "**/.devcontainer": true,
+    "**/.test": true,
+    "**/.vscode": true,
+    "**/.github": true,
+    "**/.gitignore": true
+  },
+  "extensions.ignoreRecommendations": true,              // Prevents VS Code from suggesting extensions.
+  "markdown.preview.doubleClickToSwitchToEditor": false  // Prevents double-clicking in Markdown preview from switching back to the editor.
+}

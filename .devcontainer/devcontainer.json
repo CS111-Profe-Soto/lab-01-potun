@@ -1,0 +1,30 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/java:25",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack", //Extension Pack for Java: Java, Maven, Gradle, IntelliCode
+                "yzhang.markdown-all-in-one" //Markdown All in One: advanced markdown support
+            ],
+            "settings": {
+				 //starts container in mode to compile/run code vs. lightweight mode
+                "java.server.launchMode": "Standard",
+				 //inlay hints are like param names before arguments
+                "editor.inlayHints.enabled": "off",
+                //settings to format
+                "editor.formatOnType": true,
+                //italicize comments
+                "editor.tokenColorCustomizations": {
+                    "textMateRules": [
+                        {
+                            "scope": "comment",
+                            "settings": {
+                                "fontStyle": "italic"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
